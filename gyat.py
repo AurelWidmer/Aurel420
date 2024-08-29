@@ -1,10 +1,8 @@
 import os
 a = ""
-while True:
+while a != "ja" or a != "nein":
     a = input("Wer Gänsehaut, schlägt auch Enten. Ja oder nein? ")
-    if a == "ja":
-        print("Dönerbeule")
-        break
-    else:
-        os.system("shutdown /p")
-        break
+if a == "ja":
+    print("Dönerbeule")
+else:
+    os.system("shutdown /p")
